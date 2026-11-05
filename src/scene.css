@@ -1,0 +1,16 @@
+.hero-scene{position:absolute;inset:0;z-index:1;pointer-events:none;opacity:.83}
+.hero-scene canvas{display:block;width:100%;height:100%}
+.architecture{opacity:.22}
+@media(max-width:640px){.hero-scene{opacity:.66}.architecture{opacity:.16}}
+.page-rail{position:fixed;z-index:8;right:25px;top:50%;transform:translateY(-50%);display:flex;align-items:center;flex-direction:column;gap:12px;color:#858b90}
+.page-count,.page-name{font:8px 'DM Mono',monospace;letter-spacing:.12em;writing-mode:vertical-rl}
+.page-count i{font-style:normal;color:#515961;margin-top:5px}
+.page-rail nav{display:flex;align-items:center;flex-direction:column;gap:3px;border-block:1px solid rgba(220,230,240,.14);padding:7px 0}
+.page-rail nav a{width:22px;height:16px;display:grid;place-items:center;color:#687079;transition:color .25s,transform .25s}
+.page-rail nav a span{font:7px 'DM Mono',monospace;opacity:.65}
+.page-rail nav a:hover,.page-rail nav a.active{color:#a9c9ef;transform:translateX(-2px)}
+.page-rail nav a.active span{opacity:1}
+.page-name{color:#9aa1a5}
+.footer-bottom .socials{justify-content:flex-start}
+@media(max-width:1050px){.page-rail{right:10px;opacity:.8}}
+@media(max-width:760px){.page-rail{display:none}}
